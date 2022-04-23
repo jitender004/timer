@@ -1,0 +1,64 @@
+.timer{
+ 
+    height:auto;
+    width:480px;
+    margin: auto;
+    margin-top: 40px;
+    padding-top:6px;
+    background:linear-gradient(to right bottom , #4085e6 , #f080ece3);
+    border-radius: 18px;
+    box-shadow: 10px 8px 8px rgb(246, 197, 98);
+  }
+  .inp1{
+    height:28px;
+    width:120px;
+    margin:10px;
+    padding-left:10px;
+    border-radius: 9px;
+  }
+  .sub{
+    height:36px;
+    width:80px;
+    margin:10px;
+    border-radius: 9px;
+    background-color: #f97e03;
+    border:none;
+    color:black;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .sub-main{
+    height:46px;
+    width:109px;
+    margin:10px;
+    border-radius: 9px;
+    background-color: #ec018b;
+    border:none;
+    color:White;
+    margin-top: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .res{
+    color:red;
+  }
+.D1{
+  display:flex;
+}
+.D1>button{
+  height:36px;
+  width:80px;
+  margin:6px;
+  border-radius: 9px;
+  background-color: #fa9e77;
+  border:none;
+  color:rgb(13, 13, 13);
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 40px;
+ margin-bottom: 30px;
+ 
+}
+.D1>button:nth-child(1){
+  margin-left: 22%;
+}
