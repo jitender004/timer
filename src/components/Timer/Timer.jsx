@@ -1,5 +1,7 @@
 import {useState , useEffect} from "react";
-import './Timer.css'
+import './Timer.css';
+import React from 'react'
+// import ReactDOM from 'react-dom'
 
 export const Timer = () => {
     const [min , setMin] = useState(null);
@@ -38,19 +40,19 @@ export const Timer = () => {
          id = setInterval(() => {
             setSec((prevValue) => {
 
-                if (prevValue == 0 && min == 0){
+                if (prevValue === 0 && min === 0){
                     clearInterval(id);
                     setResult("Time is Up....")
                     return 0;
                     
                 }
-                if(prevValue == 0){
+                if(prevValue === 0){
                  setMin(min-1);
                 }
-                if(min>= 1 && prevValue == 0){
+                if(min>= 1 && prevValue === 0){
                     setSec(59);
                 }
-                if(min == null){
+                if(min === null){
                     setMin(0);
                 }
                 
@@ -102,15 +104,15 @@ export const Timer = () => {
                 id = setInterval(() => {
                     setSec((prevValue) => {
         
-                        if (prevValue == 0 && min == 0){
+                        if (prevValue === 0 && min === 0){
                             clearInterval(id);
                             return 0;
                             
                         }
-                        if(prevValue == 0){
+                        if(prevValue === 0){
                          setMin(min-1);
                         }
-                        if(min>= 1 && prevValue == 0){
+                        if(min>= 1 && prevValue === 0){
                             setSec(59);
                         }
                         
